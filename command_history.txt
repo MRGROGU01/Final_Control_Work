@@ -1,0 +1,217 @@
+    1  clear
+    2  apt install openssh-server
+    3  sytemctl start ssh
+    4  systemctl start ssh
+    5  systemctl enable ssh
+    6  systemctl status ssh
+    7  clear
+    8  systemctl status ssh
+    9  ip a
+   10  clear
+   11  exit
+   12  ls -al
+   13  cd test
+   14  ll
+   15  cd test2
+   16  cd / test2
+   17  cd test2
+   18  cd ..
+   19  cd test2
+   20  clear
+   21  sudo usermod -s /bin/sh -aG www-data test2
+   22  id test2
+   23  cat /etc/passwd | grep test
+   24  clear
+   25  passwd 
+   26  exit
+   28  clear
+   29  \
+   30  apt update && apt upgrade
+   31  apt search nginx
+   32  apt list nginx
+   33  apt install nginx
+   34  cd /etc/nginx
+   35  ll
+   36  apt removenginx
+   37  apt remove nginx
+   38  ll
+   39  apt autoremove
+   40  apt install nginx
+   41  cd ..
+   42  apt purge nginx
+   43  cd nginx
+   44  apt install nginx
+   45  cd nginx
+   46  ll
+   47  j
+   48  apt list mc
+   49  apt show mc
+   50  exit
+   51  cd ..
+   52  cd /etc
+   53  nano crontap
+   54  exit
+   55  apt install wget
+   56  https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
+   57  wget https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
+   58  ll
+   59  cd
+   60  dpkg -i https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
+   61  dpkg -i  virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
+   62  apt -f install
+   63  dpkg -i virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
+   64  cd /home/rick
+   65  dpkg -i virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
+   66  apt -f install
+   67  cat > vb.list deb deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian <mydist> contrib
+   68  cd ..
+   69  dpkg -i https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
+   70  wget https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
+   71  ll
+   72  dpkg -i https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
+   73  ll
+   74  dpkg -i virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb 
+   75  apt -f install
+   76  dpkg -i virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb 
+   77  cd /etc/apt
+   78  ll
+   79  cd sources.list.d/
+   80  ll
+   81  nano vb.list
+   82  apt update
+   83  wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
+   84  apt update
+   85  mkdir ~/testfolder
+   86  ll
+   87  cd ..
+   88  ll
+   89  cd
+   90  mkdir ~/testfolder
+   91  cd ..
+   92  exit
+   93  ip a
+   94  ls
+   95  sudo unshare --net --pid --fork --mount-proc /bin/bash
+   96  ls
+   97  ap a
+   98  ip a
+   99  cd ..
+  100  c ..
+  101  cd ..
+  102  apt update
+  103  apt upgrade
+  104  apt-get install lxc debootstrap bridge-utils lxc-templates
+  105  apt-get install lxd-installer
+  106  lxd init
+  107  lxc storage list
+  108  apt update
+  109  lxc storage list
+  110  lxc-create -n test123 -t ubuntu
+  111  lxc-start -n test123
+  112  apt update
+  113  apt upgrade
+  114  ip a
+  115  echo -e "Dogs\nCats\nHamsters" > pets.txt
+  116  echo -e "Horses\nCamels\nDonkeys" > pack_animals.txt
+  117  cat pets.txt pack_animals.txt > human_friends.txt
+  118  cat human_friends.txt
+  119  mv human_friends.txt Human_Friend.txt
+  120  mkdir animal_shelter
+  121  mv Human_Friends.txt animal_shelter/
+  122  ls
+  123  mv Human_Friend.txt animal_shelter/
+  124  apt-get install mysql-server
+  125  apt-get install mysql_client
+  126  apt-get install mysql-client
+  127  dpkg -i package_name.deb
+  128  wget http://example.com/path/to/package_name.deb
+  129  dpkg -i package_name.deb
+  130  ls
+  131  apt-get install package_name
+  132  search package_name
+  133  wget http://example.com/path/to/package_name.deb
+  134  sudo dpkg -i package_name.deb
+  135  wget http://example.com/path/to/package_name.deb
+  136  deb
+  137  deb --help
+  138  help
+  139  hicstory
+  140  history
+  141  dpkg -i package.name
+  142  apt-get install -f
+  143  wget http://archive.ubuntu.com/ubuntu/pool/universe/v/vlc/vlc_3.0.11.1-1_amd64.deb
+  144  # Скачиваем пакет
+  145  wget http://archive.ubuntu.com/ubuntu/pool/universe/h/htop/htop_3.2.0-1_amd64.deb
+  146  # Устанавливаем пакет
+  147  sudo dpkg -i htop_3.2.0-1_amd64.deb
+  148  # Устанавливаем зависимос
+  149  sudo apt-get install -f
+  150  wget http://archive.ubuntu.com/ubuntu/pool/universe/h/htop/htop_3.2.0-1_amd64.deb
+  151  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  152  dpkg - i google-chrome-stable_current_amd64.deb
+  153  dpkg -i google-chrome-stable_current_amd64.deb
+  154  sudo apt-get remove --purge google-chrome-stable
+  155  history > command_history.txt
+  156  mysql -u root -p
+  157  apt update
+  158  apt upgrade
+  159  mysqldump
+  160  mysqldump - uusername -p AllAnimals > AllAnimals_dump.sql
+  161  mysqldump - username -p AllAnimals > AllAnimals_dump.sql
+  162  mysqldump -u  username -p AllAnimals > AllAnimals_dump.sql
+  163  apt update
+  164  apt upgrade
+  165  mysqldump root -p AllAnimals > AllAnimal_dump.sql
+  166  mysql -u root
+  167  mysqldump root -p AllAnimals > AllAnimal_dump.sql
+  168  mysqld_safe --skip-grant-tables &
+  169  sudo systemctl stop mysql
+  170  sudo mysqld_safe --skip-grant-tables &
+  171  ls
+  172  AllAnimals_dump.sql
+  173  cd /AllAnimals_dump.sql
+  174  cd AllAnimals_dump.sql/
+  175  cat AllAnimals_dump.sql
+  176  more AllAnimals_dump.sql
+  177  sqlite3 AllAnimals_dump.sql
+  178  .table
+  179  .tables
+  180  nano AllAnimals_dump.sql
+  181  ls
+  182  cal animal_directory
+  183  cat animal_directory
+  184  cat pack_animals.txt
+  185  cat command_history.txt
+  186  ls
+  187  cat history_commands.txt
+  188  ls
+  189  rm animal_directory
+  190  rmdir animal_directory
+  191  echo -e "Dog\nCat\nHamster" > pets.txt
+  192  ls
+  193  cd pets.txt
+  194  cat pets.txt
+  195  echo -e "Horse\nCamel\nDonkey" > pack_animals.txt
+  196  cat pets.txt pack_animals.txt | tee animals.txt
+  197  mv animals.txt human_friends.txt
+  198  echo -e "Dog\nCat\nHamster\nHorse\nCamel\nDonkey" > human_friends.txt
+  199  mkdir -p animals_directory && mv human_friends.txt animals_directory/
+  200  apt install sofware-properties-common
+  201  apt install software-properties-common
+  202  sudo add-apt-repository 'deb http://repo.mysql.com/apt/ubuntu/ focal mysql-apt-config'
+  203  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C
+  204  wget https://dev.mysql.com/get/mysql-apt-config_0.8.22-1_all.deb
+  205  sudo dpkg -i mysql-apt-config_0.8.22-1_all.deb
+  206  sudo apt-get install mysql-server mysql-client
+  207  sudo apt-get install mysql-client-core-8.0
+  208  sudo dpkg -i package_name.deb
+  209  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  210  sudo dpkg -i google-chrome-stable_current_amd64.deb
+  211  sudo apt-get install -f
+  212  sudo apt-get remove --purge google-chrome-stable
+  213  sudo apt-get autoremove
+  214  ls
+  215  rm history_commands.txt
+  216  ls
+  217  historyu > command_history.txt
+  218  history > command_history.txt
